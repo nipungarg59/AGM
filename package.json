@@ -1,0 +1,27 @@
+{
+  "name": "agm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nipungarg59/AGM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nipungarg59/AGM/issues"
+  },
+  "homepage": "https://github.com/nipungarg59/AGM#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "react": "^15.4.2",
+    "webpack": "^1.14.0",
+    "webpack-bundle-tracker": "^0.2.0"
+  }
+}

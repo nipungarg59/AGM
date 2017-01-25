@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js --progress --colors",
-    "build-production": "webpack --config webpack.prod.config.js --progress --colors",
-    "watch": "node server.js",
-    "build-wout-hr": "node_modules/.bin/webpack --config webpack.local.config.js"
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "watch": "node server.js"
   },
   "repository": {
     "type": "git",

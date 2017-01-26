@@ -1,6 +1,7 @@
 import React from "react"
 import { render } from "react-dom"
 import Headline from "./components/Headline"
+import Footer from "./components/Footer"
 
 class MainApp extends React.Component{
 	constructor(props) {
@@ -27,7 +28,8 @@ class MainApp extends React.Component{
 			return(
 				<div>
 					<Headline>Heres the main page</Headline>
-					<p>Heres the main page</p>
+					<p className="big">Heres the fuckin main page</p>
+					<Footer></Footer>
 				</div>
 			)
 		}

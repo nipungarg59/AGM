@@ -38,7 +38,7 @@ export default class Headline extends React.Component {
 				    </Nav>
 				</Navbar>
 			</div>
-			<div>
+			<div style={style2}>
 			<h1>{ this.props.children }</h1>
 	    	<Button bsStyle="primary">fuckin gr8..!</Button>
 	    	<div>
@@ -53,4 +53,8 @@ export default class Headline extends React.Component {
 var style1 = {
 	backgroundColor: "red",
 	fontSize: "32"
+}
+
+var style2 = {
+	marginTop: "50px"
 }

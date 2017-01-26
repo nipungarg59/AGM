@@ -4,6 +4,35 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+    	.big{
+    		text-align: center;
+    	}
+		.bordered {
+		  background-color: #222222;
+		  position: relative;
+		  height: 10em;
+		  width: 100%;
+		  bottom: 0;
+		  color: #9d9d9d;
+		  text-align: center;
+		}
+		.bordered:before {
+		  content: '';
+		  position: absolute;
+		  z-index: -1;
+		}
+		.bordered:before {
+		  background: -moz-linear-gradient(315deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, #222222 75%, #222222), -moz-linear-gradient(225deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, #222222 75%, #222222);
+		  background: -webkit-linear-gradient(315deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, #222222 75%, #222222), -webkit-linear-gradient(225deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, #222222 75%, #222222);
+		  background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, #222222 75%, #222222), linear-gradient(225deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, #222222 75%, #222222);
+		  background-size: 1em 1em;
+		  left: 0;
+		  top: -1em;
+		  height: 1em;
+		  width: 100%;
+		}
+    </style>
   </head>
   <body>
     {% block main %}{% endblock %}

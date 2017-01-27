@@ -43,4 +43,16 @@ config.module.loaders.push(
   { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'] }
 )
 
+config.module.loaders.push(
+  { 
+  	test: /\.scss$/,
+    loaders: ['style', 'css', 'sass'] 
+})
+
+config.module.loaders.push(
+{
+  test: /\.(jpg|png)$/,
+  loader: 'url?limit=25000'
+})
+
 module.exports = config

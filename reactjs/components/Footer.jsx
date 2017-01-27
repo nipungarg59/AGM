@@ -13,7 +13,14 @@ export default class Footer extends React.Component{
 		return(
 			
 			<div className="bordered">
-				<FooterMap></FooterMap>
+        <div>
+        <h1>Contact Us</h1>
+        <hr style={hrline}/>
+        <br/>
+        </div>
+			    <div style={map}>
+            <FooterMap></FooterMap>
+          </div>
 			</div>
 			
 		)
@@ -60,4 +67,14 @@ var phantom = {
   padding: '20px',
   height: '60px',
   width: '100%',
+}
+
+var map = {
+  marginLeft: 750,
+}
+
+var hrline = {
+  color: 'white',
+  margin: 'auto',
+  width: '5%'
 }

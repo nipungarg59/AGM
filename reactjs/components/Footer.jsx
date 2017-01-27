@@ -1,4 +1,5 @@
 import React from "react"
+import FooterMap from "./FooterMap"
 
 import {OverlayTrigger, Popover, Tooltip,Modal, Clearfix, ButtonToolbar, Button, ButtonGroup, DropdownButton, MenuItem, SplitButton} from "react-bootstrap"
 import {Pager , Pagination, Row, Col, Tabs, Tab, Breadcrumb, FormGroup,FormControl, Nav, NavItem, NavDropdown, Navbar} from "react-bootstrap"
@@ -11,7 +12,9 @@ export default class Footer extends React.Component{
 	render(){
 		return(
 			
-			<div className="bordered">I am the footer</div>
+			<div className="bordered">
+				<FooterMap></FooterMap>
+			</div>
 			
 		)
 	}

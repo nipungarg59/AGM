@@ -19,6 +19,7 @@ export default class FooterMap extends React.Component{
 			showInfoWindow: true,
 			selectedPlace: props,
 		})
+		// console.log(this.state.activeMarker);
 	}
 
 	windowHasClosed(){
@@ -33,18 +34,21 @@ export default class FooterMap extends React.Component{
 		return(
 			<div>
 				<div ref="map" style={mapStyle}>
-					<Map style={mapStyle} google={window.google} initialCenter={this.state.center} zoom={15}>
+				<div>
+					<Map containerStyle={mapStyle2} google={window.google} initialCenter={this.state.center} zoom={15}>
 					<Marker
 					    name={'AG Mittal & Associates'}
 					    position={this.state.center}
+
 					    onClick={this.onMarkerClick.bind(this)}
 					    />
 					 <InfoWindow marker={this.state.activeMarker} visible={this.state.showInfoWindow} onClose={this.windowHasClosed.bind(this)}>
 					 <div>
-					 	<img src={require('./images/logoLow.png')}/>
+					 	<img src={require('./css/images/logoLow.png')}/>
 					 </div>
 					 </InfoWindow>
 					</Map>
+				</div>
 				</div>
 			</div>
 		)
@@ -52,9 +56,17 @@ export default class FooterMap extends React.Component{
 }
 
 var mapStyle = {
-      width: 500,
+      width: 'auto',
+      maxWidth: 500,
       height: 300,
       border: '1px solid black',
+      position: 'relative',
     }
 
+var mapStyle2 = {
+	width: 'auto',
+      maxWidth: 500,
+	height: 300,
+	position: 'relative',
+}
 // initialCenter={{lat:28.629831,lng:77.277720}} zoom={2}

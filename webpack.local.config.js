@@ -33,9 +33,16 @@ config.plugins = config.plugins.concat([
 ])
 
 config.module.loaders.push(
-  { 
-    test: /\.scss$/,
-    loaders: ['style', 'css', 'sass'] 
+  { test: /\.css$/, loader: "style-loader" })
+
+config.module.loaders.push(
+  {
+  test: /\.css$/,
+  loader: 'css-loader',
+  query: {
+    modules: true,
+    localIdentName: '[name]__[local]___[hash:base64:5]'
+  }
 })
 
 config.module.loaders.push(

@@ -1,0 +1,11 @@
+.address{
+	list-style-image: url('./images/locIcon.png');
+}
+
+.phone{
+	list-style-image: url('./images/phoneIcon.png');
+}
+
+.email{
+	list-style-image: url('./images/emailIcon.png');
+}

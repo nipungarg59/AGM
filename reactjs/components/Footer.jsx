@@ -1,5 +1,9 @@
 import React from "react"
-import FooterMap from "./FooterMap"
+import FooterMap from "./FooterComponents/FooterMap"
+import FooterAddress from "./FooterComponents/FooterAddress"
+import FooterLove from "./FooterComponents/FooterLove"
+import s from "./abcd.css"
+import fo from "./footer.css"
 
 import {OverlayTrigger, Popover, Tooltip,Modal, Clearfix, ButtonToolbar, Button, ButtonGroup, DropdownButton, MenuItem, SplitButton} from "react-bootstrap"
 import {Pager , Pagination, Row, Col, Tabs, Tab, Breadcrumb, FormGroup,FormControl, Nav, NavItem, NavDropdown, Navbar} from "react-bootstrap"
@@ -11,18 +15,34 @@ import {bootstrapUtils,addStyle,  Fade, Collapse, ProgressBar, Alert, Badge, Lab
 export default class Footer extends React.Component{
 	render(){
 		return(
-			
+			<div>
 			<div className="bordered">
         <div>
         <h1>Contact Us</h1>
         <hr style={hrline}/>
         <br/>
         </div>
+          <div style={add}>
+            {/*<p className={s.red}>Addrefdgjkfdhghj hdfjdhffh  ufdhusdhfuiss goesdsd dsf fdsf dssdsfsgfdggdsfssdgdgffsddffsdfs herednbsfjhsdbhfbdsfhbchjb shbdshfb hjsdbfhdsh dsfhjd  dsfd sfgudgsufgduhfbchdsfugsdufb</p>*/}
+            <br/><br/>
+            <FooterAddress></FooterAddress>
+          </div>
 			    <div style={map}>
             <FooterMap></FooterMap>
           </div>
+          {/*<div className={fo.row}>
+            <div className={fo.col3}>
+              <p className={s.red}>Addrefdgjkfdhghj hdfjdhffh  ufdhusdhfuiss goesdsd dsf fdsf dssdsfsgfdggdsfssdgdgffsddffsdfs herednbsfjhsdbhfbdsfhbchjb shbdshfb hjsdbfhdsh dsfhjd  dsfd sfgudgsufgduhfbchdsfugsdufb</p>
+            </div>
+          <div className={fo.col9}>
+            <FooterMap></FooterMap>
+          </div>
+          </div>*/}
 			</div>
-			
+      <div className={fo.love}>
+        <FooterLove></FooterLove>
+      </div>
+			</div>
 		)
 	}
 }
@@ -70,7 +90,14 @@ var phantom = {
 }
 
 var map = {
-  marginLeft: 750,
+  float: 'left',
+  width: '50%'
+}
+
+var add = {
+  float: 'left',
+  width: '50%'
+
 }
 
 var hrline = {

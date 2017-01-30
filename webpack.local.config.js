@@ -5,6 +5,8 @@ var config = require('./webpack.base.config.js')
 
 var ip = 'localhost'
 
+config.ip=ip
+
 config.entry = {
   App1: [
     'webpack-dev-server/client?http://' + ip + ':3000',

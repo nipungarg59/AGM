@@ -59,7 +59,7 @@ config.module.loaders.push(
 config.module.loaders.push(
 {
   test: /\.(jpg|png)$/,
-  loader: 'url?limit=25000'
+  loader: 'url'
 })
 
 module.exports = config

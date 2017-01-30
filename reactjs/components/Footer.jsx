@@ -22,22 +22,23 @@ export default class Footer extends React.Component{
         <hr style={hrline}/>
         <br/>
         </div>
-          <div style={add}>
-            {/*<p className={s.red}>Addrefdgjkfdhghj hdfjdhffh  ufdhusdhfuiss goesdsd dsf fdsf dssdsfsgfdggdsfssdgdgffsddffsdfs herednbsfjhsdbhfbdsfhbchjb shbdshfb hjsdbfhdsh dsfhjd  dsfd sfgudgsufgduhfbchdsfugsdufb</p>*/}
-            <br/><br/>
-            <FooterAddress></FooterAddress>
-          </div>
-			    <div style={map}>
-            <FooterMap></FooterMap>
-          </div>
-          {/*<div className={fo.row}>
-            <div className={fo.col3}>
-              <p className={s.red}>Addrefdgjkfdhghj hdfjdhffh  ufdhusdhfuiss goesdsd dsf fdsf dssdsfsgfdggdsfssdgdgffsddffsdfs herednbsfjhsdbhfbdsfhbchjb shbdshfb hjsdbfhdsh dsfhjd  dsfd sfgudgsufgduhfbchdsfugsdufb</p>
-            </div>
-          <div className={fo.col9}>
-            <FooterMap></FooterMap>
-          </div>
-          </div>*/}
+        {/*<div style={add}>
+          <br/><br/>
+          <FooterAddress></FooterAddress>
+        </div>
+		    <div style={map}>
+          <FooterMap></FooterMap>
+        </div>*/}
+        <Grid>
+            <row>
+              <Col xs={12} md={6}>
+                <FooterAddress ></FooterAddress>
+              </Col>
+              <Col xs={12} md={6}>
+                <FooterMap></FooterMap>
+              </Col>
+            </row>
+        </Grid>
 			</div>
       <div className={fo.love}>
         <FooterLove></FooterLove>

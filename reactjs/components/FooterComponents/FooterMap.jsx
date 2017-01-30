@@ -32,9 +32,7 @@ export default class FooterMap extends React.Component{
 
 	render(){
 		return(
-			<div>
 				<div ref="map" style={mapStyle}>
-				<div>
 					<Map containerStyle={mapStyle2} google={window.google} initialCenter={this.state.center} zoom={15}>
 					<Marker
 					    name={'AG Mittal & Associates'}
@@ -49,23 +47,22 @@ export default class FooterMap extends React.Component{
 					 </InfoWindow>
 					</Map>
 				</div>
-				</div>
-			</div>
 		)
 	}
 }
 
 var mapStyle = {
-      width: 'auto',
+      width: '100%',
       maxWidth: 500,
       height: 300,
       border: '1px solid black',
       position: 'relative',
+      
     }
 
 var mapStyle2 = {
 	width: 'auto',
-      maxWidth: 500,
+    maxWidth: 500,
 	height: 300,
 	position: 'relative',
 }

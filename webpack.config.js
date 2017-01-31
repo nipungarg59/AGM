@@ -59,7 +59,7 @@ config.module.loaders.push(
 config.module.loaders.push(
 {
   test: /\.(jpg|png)$/,
-  loader: 'url'
+  loader: 'url?limit=10000&publicPath=./static/bundles/local/&name=[name].[ext]'
 })
 
 module.exports = config

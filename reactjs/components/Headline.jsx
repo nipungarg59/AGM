@@ -1,12 +1,5 @@
 import React from "react"
-import styles from "./css/navbarItems.css"
-import {OverlayTrigger, Popover, Tooltip,Modal, Clearfix, ButtonToolbar, Button, ButtonGroup, DropdownButton, MenuItem, SplitButton} from "react-bootstrap"
-import {Pager , Pagination, Row, Col, Tabs, Tab, Breadcrumb, FormGroup,FormControl, Nav, NavItem, NavDropdown, Navbar} from "react-bootstrap"
-import {Well , Accordion, Panel, Table, ListGroup, ListGroupItem, Grid, Jumbotron, PageHeader} from "react-bootstrap"
-import {Form,Glyphicon,  InputGroup,  Checkbox, Radio, ControlLabel,HelpBlock } from "react-bootstrap"
-import {Media, Carousel, ResponsiveEmbed, Thumbnail,  Image} from "react-bootstrap"
-import {bootstrapUtils,addStyle,  Fade, Collapse, ProgressBar, Alert, Badge, Label} from "react-bootstrap"
-
+// import styles from "./css/navbarItems.css"
 
 export default class Headline extends React.Component {
 
@@ -17,35 +10,41 @@ export default class Headline extends React.Component {
 	render() {
     return (
     	<div>
-	      	<div>
-		        <Navbar fluid inverse collapseOnSelect fixedTop>
-				    <Navbar.Header>
-				      <Navbar.Brand>
-				        <a href="#">React-Bootstrap</a>
-				      </Navbar.Brand>
-				      <Navbar.Toggle />
-				    </Navbar.Header>
-				    <Navbar.Collapse>
-				      <Nav id="1">
-				        <NavItem eventKey={1} href="#" >Link1</NavItem>
-				        <NavItem eventKey={2} href="#">Link</NavItem>
-				        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-				          <MenuItem eventKey={3.1}>Action</MenuItem>
-				          <MenuItem eventKey={3.2}>Another action</MenuItem>
-				          <MenuItem eventKey={3.3}>Something else here</MenuItem>
-				          <MenuItem divider />
-				          <MenuItem eventKey={3.3}>Separated link</MenuItem>
-				        </NavDropdown>
-				      </Nav>
-				      <Nav pullRight>
-				        <NavItem eventKey={1} href="#">Link Right</NavItem>
-				        <NavItem eventKey={2} href="#">Link Right</NavItem>
-				      </Nav>
-				    </Navbar.Collapse>
-				</Navbar>
+	      	<div className="container example-7">
+		        <nav className="navbar navbar-inverse navbar-default navbar-fixed-top">
+				  <div className="container-fluid">
+				    <div className="navbar-header">
+				      <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span className="icon-bar"></span>
+				        <span className="icon-bar"></span>
+				        <span className="icon-bar"></span>                        
+				      </button>
+				      <a className="navbar-brand" href="#"><img className="img-responsive" src={require('./FooterComponents/css/images/logoLow.png')}></img></a>
+				    </div>
+				    <div className="collapse navbar-collapse" id="myNavbar">
+				      <ul className="nav navbar-nav">
+				        <li className="active"><a href="#">Home</a></li>
+				        <li className="dropdown">
+				          <a className="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span className="caret"></span></a>
+				          <ul className="dropdown-menu">
+				            <li><a href="#">Page 1-1</a></li>
+				            <li><a href="#">Page 1-2</a></li>
+				            <li><a href="#">Page 1-3</a></li>
+				          </ul>
+				        </li>
+				        <li><a href="#">Page 2</a></li>
+				        <li><a href="#">Page 3</a></li>
+				      </ul>
+				      <ul className="nav navbar-nav navbar-right">
+				        <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				</nav>
 			</div>
-			<div style={style2}>
-			<h1>{ this.props.children }</h1>
+			<div>
+			<h1 style={style2}>{ this.props.children }</h1>
 	    	<button type="button" className="btn btn-primary">Primary</button>
 	    	<div>
 	    		<p>dfj</p>
@@ -62,5 +61,6 @@ var style1 = {
 }
 
 var style2 = {
-	marginTop: "50px"
+	marginTop: "0px",
+	paddingTop:"70px"
 }

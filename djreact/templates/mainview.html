@@ -2,7 +2,11 @@
 {% load render_bundle from webpack_loader %}
 
 {% block main %}
-<div id="MainApp"></div>
+<div id="MainApp">
+	<div id="loader-wrapper">
+	    <div id="loader"></div>	 
+	</div>
+</div>
 {% render_bundle 'vendors' %}
 {% render_bundle 'MainApp' %}
 {% endblock %}

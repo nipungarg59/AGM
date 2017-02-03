@@ -16,19 +16,12 @@ export default class Footer extends React.Component{
 	render(){
 		return(
 			<div>
-			<div className="bordered">
+			<div className="bordered" id="contact">
         <div>
         <h1>Contact Us</h1>
         <hr style={hrline}/>
         <br/>
         </div>
-        {/*<div style={add}>
-          <br/><br/>
-          <FooterAddress></FooterAddress>
-        </div>
-		    <div style={map}>
-          <FooterMap></FooterMap>
-        </div>*/}
         <Grid>
             <row>
               <Col xs={12} md={6}>

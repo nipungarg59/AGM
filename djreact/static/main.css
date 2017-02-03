@@ -1,9 +1,24 @@
-p{
+/*p{
 	color: blue;
 }
+*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>NavBar<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+.navbar{
+	background-color:rgba(44,44,44,0.95);
+	/*background-image: none;*/
+}
 
-/*NavBar*/
+/*.navbar-fixed-top {
+  top: -10px;  you'll have to figure out the exact number here 
+}*/
+
+/*.navbar-fixed-top, .navbar-fixed-bottom {
+  position: static;
+  width: 100%;
+  padding: 0; /* this can also be static 
+}*/
+
 .navbar-brand {
   padding: 0px;
 }
@@ -36,7 +51,60 @@ p{
   .example-7 .navbar-brand>img {
   height: 100%;
   width: auto;
-  padding: 7px auto; 
+  padding: 7px 14px; 
   /*max-width: 100%;*/
   }
+  .example-7 .nav >li >a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Navbar End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Coming Soon<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+.bgimg {
+    background-image: url('/static/coming.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.displayMiddle {
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+}
+
+.displayTopleft{
+  position:absolute;
+  left:0;
+  top:0
+}
+.displayTopright{
+  position:absolute;
+  right:0;
+  top:0
+}
+
+.displayMiddle2{
+  position: absolute;
+  top:80%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+}
+
+.trans{
+  background-color: transparent;
+  border:2px solid white;
+  position: absolute;
+  top: 45%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
 }

@@ -9,7 +9,7 @@ export default class Headline extends React.Component {
 
 	render() {
     return (
-    	<div>
+    	<div id="top">
 	      	<div className="container example-7">
 		        <nav className="navbar navbar-inverse navbar-default navbar-fixed-top">
 				  <div className="container-fluid">
@@ -19,37 +19,34 @@ export default class Headline extends React.Component {
 				        <span className="icon-bar"></span>
 				        <span className="icon-bar"></span>                        
 				      </button>
-				      <a className="navbar-brand" href="#"><img className="img-responsive" src={require('./FooterComponents/css/images/logoLow.png')}></img></a>
+				      <a className="navbar-brand" href="#"><img className="img-responsive" src={require('./FooterComponents/css/images/logop.png')}></img></a>
 				    </div>
 				    <div className="collapse navbar-collapse" id="myNavbar">
-				      <ul className="nav navbar-nav">
-				        <li className="active"><a href="#">Home</a></li>
+				      <ul className="nav navbar-nav navbar-right">
+				        <li className="active"><a href="#top" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
 				        <li className="dropdown">
 				          <a className="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span className="caret"></span></a>
-				          <ul className="dropdown-menu">
-				            <li><a href="#">Page 1-1</a></li>
-				            <li><a href="#">Page 1-2</a></li>
-				            <li><a href="#">Page 1-3</a></li>
+				          <ul className="dropdown-menu animated fadeInUp">
+				            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Page 1-1</a></li>
+				            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Page 1-2</a></li>
+				            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Page 1-3</a></li>
 				          </ul>
 				        </li>
-				        <li><a href="#">Page 2</a></li>
-				        <li><a href="#">Page 3</a></li>
-				      </ul>
-				      <ul className="nav navbar-nav navbar-right">
-				        <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+				        <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Page 2</a></li>
+				        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact Us</a></li>
+				        <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
 				      </ul>
 				    </div>
 				  </div>
 				</nav>
 			</div>
 			<div>
-			<h1 style={style2}>{ this.props.children }</h1>
-	    	<button type="button" className="btn btn-primary">Primary</button>
-	    	<div>
-	    		<p>dfj</p>
-	    	</div>
-	    	</div>
+						<h1 style={style2}>{ this.props.children }</h1>
+				    	<button type="button" className="btn btn-primary">Primary</button>
+				    	<div>
+				    		<p>dfj</p>
+				    	</div>
+				    	</div>
 	    </div>
     )
   }
@@ -62,5 +59,7 @@ var style1 = {
 
 var style2 = {
 	marginTop: "0px",
-	paddingTop:"70px"
+	paddingTop:"90px"
 }
+
+

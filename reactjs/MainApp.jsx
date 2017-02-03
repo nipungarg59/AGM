@@ -2,31 +2,31 @@ import React from "react"
 import { render } from "react-dom"
 import Headline from "./components/Headline"
 import Footer from "./components/Footer"
+import ComingSoon from "./components/ComingSoon"
 
 class MainApp extends React.Component{
 	constructor(props) {
     	super(props);
       	this.state = {
-        	load : false,
+        	comingSoon : true,
       	}
     }
 
-    componentDidMount(){
+    updateComingSoon(){
     	this.setState({
-    		load : true,
+    		comingSoon : false,
     	})
     }
 
 	render(){
-		if(this.state.load==false)
+		if(this.state.comingSoon)
 		{
-			// TODO
-			return(<h1>Waiting For the page to get load.</h1>)
+			return(<ComingSoon updateComingSoon={this.updateComingSoon.bind(this)}/>)
 		}
 		else
 		{
 			return(
-				<div className="animated fadeIn">
+				<div className="animated fadeInUpBig">
 					<Headline>Heres the main page</Headline>
 					<p className="big">Heres the fuckin main page</p>
 					<Footer></Footer>

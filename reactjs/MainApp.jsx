@@ -26,7 +26,7 @@ class MainApp extends React.Component{
 		else
 		{
 			return(
-				<div className="animated fadeInUpBig">
+				<div className="animated fadeIn">
 					<Headline>Heres the main page</Headline>
 					<p className="big">Heres the fuckin main page</p>
 					<Footer></Footer>

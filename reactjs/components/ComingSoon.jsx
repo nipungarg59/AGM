@@ -39,16 +39,16 @@ export default class ComingSoon extends React.Component {
 
 	render(){
 		return(
-			<div className="bgimg" style={{height: String(this.state.height+80).concat("px"),width: String(this.state.width).concat("px")}}>
-					<div className="displayTopLeft">
-					<img src="/static/images/logop.png" className="img-responsive"></img>
+			<div className="bgimg" style={{height: String(this.state.height+80).concat("px"),width: String(this.state.width).concat("px"),color:"white"}}>
+					<div className="displayTopleft w3-animate-top">
+					<img src="/static/images/lofgon.png" style={{height:'60px',width:'80px'}} className="img-responsive"></img>
 					</div>
 					<div className="displayMiddle">
 						<WindowSize updateDimensions={this.updateDimensions.bind(this)}></WindowSize>
-						<h1 style={{marginTop:0,fontFamily:"Lucida Console"}}>{this.state.coming}</h1>
+						<h1 className="animated flipInX" style={{marginTop:0,fontFamily:"Coustard",font:"sans-serif"}}>{this.state.coming}</h1>
 						<hr style={{margin:"auto",width:"40%"}}/>
 					</div>
-						<button className="btn trans" onClick={this.updateComingSoon.bind(this)}><h3>Continue</h3></button>
+						<button className="btn buttonEffect" onClick={this.updateComingSoon.bind(this)}><h3>Continue</h3></button>
 					<div className="displayMiddle2">
 					<ContactInfo/>
 					</div>

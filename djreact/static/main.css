@@ -63,10 +63,11 @@
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Navbar End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Coming Soon<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
+/*orig - /static/coming.jpg*/
+/*https://cdn.pixabay.com/photo/2017/01/26/21/32/background-2011768__340.jpg*/
 
 .bgimg {
-    background-image: url('/static/coming.jpg');
+    background-image: url('/static/3.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -78,12 +79,15 @@
   left:50%;
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%);
+
 }
 
 .displayTopleft{
   position:absolute;
-  left:0;
-  top:0
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  top:10%;
 }
 .displayTopright{
   position:absolute;
@@ -99,12 +103,78 @@
   -ms-transform:translate(-50%,-50%);
 }
 
-.trans{
+.buttonEffect{
   background-color: transparent;
   border:2px solid white;
+  border-radius: 7px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   position: absolute;
   top: 45%;
   left:50%;
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%);
+  display: inline-block;
+  text-align: center;
+  transition: all 0.5s;
+  font-size: 40px;
 }
+.buttonEffect h3 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonEffect h3:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonEffect:hover h3 {
+  padding-right: 25px;
+}
+
+.buttonEffect:hover h3:after {
+  opacity: 1;
+  right: 0;
+}
+
+.zommin i{
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zommin:hover i {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.w3-animate-top{
+  
+  -webkit-animation:animatetop 1s;
+  animation:animatetop 1s
+}
+@-webkit-keyframes animatetop{
+  from{
+    top:-300px;
+    opacity:0;
+    } 
+  to{
+    top:10%;
+    opacity:1;
+    }
+}
+@keyframes animatetop{from{top:-100px;opacity:0;} to{top:10%;opacity:1;}}
+
+.sblock{border:1px solid transparent; -webkit-transition: all 0.5s ease;
+             -moz-transition: all 0.5s ease;
+               -o-transition: all 0.5s ease;
+                 }
+.sblock:hover { border:1px solid rgba(5, 195, 249, 0.5); background:rgba(5, 195, 249, 0.5); }

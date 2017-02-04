@@ -9,6 +9,7 @@ class MainApp extends React.Component{
     	super(props);
       	this.state = {
         	comingSoon : true,
+        	phoneIconVisible : 'hidden',
       	}
     }
 
@@ -18,10 +19,33 @@ class MainApp extends React.Component{
     	})
     }
 
+    phoneIcon(width){
+		if(width<757)
+		{
+			this.setState({
+				phoneIconVisible :'visible'
+			})
+		}
+		else
+		{
+			this.setState({
+				phoneIconVisible: 'hidden'
+			})
+		}
+    }
+
 	render(){
 		if(this.state.comingSoon)
 		{
-			return(<ComingSoon updateComingSoon={this.updateComingSoon.bind(this)}/>)
+			return(
+				<div>
+				<ComingSoon updateComingSoon={this.updateComingSoon.bind(this)} phoneIcon={this.phoneIcon.bind(this)}/>
+				<div className="mobilePhoneIcon">
+				<a  href="tel:01165254066" className="btn btn-danger btn-circle" style={{visibility:this.state.phoneIconVisible}}><i className="fa fa-phone fa-2x"></i>
+				</a>
+				</div>
+				</div>
+			)
 		}
 		else
 		{

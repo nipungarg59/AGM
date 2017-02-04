@@ -43,7 +43,7 @@ export default class ComingSoon extends React.Component {
 			<div className="bgimg2" style={{color:"white"}}>
 			<WindowSize updateDimensions={this.updateDimensions.bind(this)}></WindowSize>
 					<div className="container animated bounceInDown" style={{paddingTop:'4%'}}>
-					<img src="/static/images/lofgon.png" style={{maxHeight:'60px',maxWidth:'80px',margin:'auto'}} className="img-responsive"></img>
+					<img src="/static/images/lofgon.png" style={{maxHeight:'200px',maxWidth:'400px',margin:'auto'}} className="img-responsive"></img>
 					</div>
 					<div className="container" style={{paddingTop:'4%',textAlign:'center'}}>
 						<h1 className="animated flipInX" style={{fontFamily:"Coustard",font:"sans-serif"}}>{this.state.coming}</h1>

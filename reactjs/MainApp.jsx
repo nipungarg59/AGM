@@ -15,7 +15,7 @@ class MainApp extends React.Component{
 
     updateComingSoon(){
     	this.setState({
-    		comingSoon : false,
+    		comingSoon : true,
     	})
     }
 

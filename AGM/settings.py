@@ -25,8 +25,9 @@ SECRET_KEY = 'ia$lsuklccv4sk9qar85udj8hlqy%s7ky3!@*s-2_*gfy5&d)d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.16.110.197','127.0.0.1']
+ALLOWED_HOSTS = ['172.16.110.197','127.0.0.1','agmittal1.herokuapp.com']
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'djreact/static'), # We do this so that django's collectstatic copies or our bundles to the STATIC_ROOT or syncs them to whatever storage we use.
 )
@@ -37,6 +38,8 @@ WEBPACK_LOADER = {
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats-local.json'),
     }
 }
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Application definition
 

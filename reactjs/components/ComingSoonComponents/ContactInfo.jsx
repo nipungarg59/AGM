@@ -6,7 +6,7 @@ export default class ContactInfo extends React.Component{
 			<div className="row">
 			    <div className="col-sm-4 animated bounceInLeft sblock contact">
 					    <i className="fa fa-phone fa-4x" ></i>
-					    <p style={{fontFamily: 'Raleway',font:'sans-serif',fontSize:"18px"}}>011- 65 25 4066 <br/> +91 - 99 99 16 4066<br/>+91- 97 11 841285</p>
+					    <p style={{fontFamily: 'Raleway',font:'sans-serif',fontSize:"18px"}}>011- 65 25 4066 <br/> +91- 99 99 164066<br/>+91- 9711 033545</p>
 			    </div>
 			     <div className="col-sm-4 animated bounceInUp sblock contact">
 					    <i className="fa fa-envelope-o fa-4x" ></i>

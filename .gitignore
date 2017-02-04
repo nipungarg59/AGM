@@ -2,8 +2,8 @@
 
 node_modules
 
-webpack-stats.json
-webpack-stats-local.json
+#webpack-stats.json
+#webpack-stats-local.json
 
 #bundels
-djreact/static/bundles/local
+#djreact/static/bundles/local

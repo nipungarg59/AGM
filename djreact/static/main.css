@@ -73,6 +73,13 @@
 
   background-position: center;
   background-size: cover;
+  animation: breath 30s linear infinite;
+}
+
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
 }
 
 

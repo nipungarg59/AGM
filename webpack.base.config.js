@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
       path: path.resolve('./djreact/static/bundles/local/'),
-      filename: "[name]-[hash].js"
+      filename: "[name].js"
   },
 
   externals: [

@@ -6,33 +6,37 @@ export default class ComingSoon extends React.Component {
 	constructor(props) {
     	super(props);
       	this.state = {
-        	width: '',
-        	height: '',
+        	width: this.props.windowWidth,
+        	height: this.props.windowHeight,
         	coming: 'Coming Soon',
       	}
     }
 
-	updateDimensions(height,width){
+	updateText(){
     	// console.log("dfjdj")
-    	this.setState({
-    		width: width,
-    		height: height,
-    	},function(){
-    		if(this.state.width<1236)
-    		{
-    			this.setState({
-    				coming :'Coming Soon'
-    			})
-    		}
-    		else
-    		{
-    			this.setState({
-    				coming: 'Our New Website Is Coming Soon'
-    			})
-    		}
-    	}.bind(this))
-    	this.props.phoneIcon(width);
+		if(this.state.width<1236)
+		{
+			this.setState({
+				coming :'Coming Soon'
+			})
+		}
+		else
+		{
+			this.setState({
+				coming: 'Our New Website Is Coming Soon'
+			})
+		}
     }
+
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            width: nextProps.windowWidth,
+            height: nextProps.windowHeight,
+        },function utility(){
+            this.updateText()
+        })
+    }
+
 
     updateComingSoon(){
     	this.props.updateComingSoon();
@@ -41,7 +45,6 @@ export default class ComingSoon extends React.Component {
 	render(){
 		return(
 			<div className="bgimg2" style={{color:"white"}}>
-			<WindowSize updateDimensions={this.updateDimensions.bind(this)}></WindowSize>
 					<div className="container animated bounceInDown" style={{paddingTop:'4%'}}>
 					<img src="/static/images/lofgon.png" style={{maxHeight:'50%',width:'100%',maxWidth:'400px',margin:'auto'}} className="img-responsive"></img>
 					</div>

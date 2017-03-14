@@ -3,7 +3,7 @@ import { render } from "react-dom"
 
 export default class WindowSize extends React.Component {
 	updateDimensions(){
-		this.props.updateDimensions(window.innerHeight,window.innerWidth);	
+		this.props.updateWindowDimensions(window.innerHeight,window.innerWidth);	
 	}
 
 	componentWillMount(){

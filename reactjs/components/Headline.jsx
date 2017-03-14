@@ -19,7 +19,7 @@ export default class Headline extends React.Component {
 				        <span className="icon-bar"></span>
 				        <span className="icon-bar"></span>                        
 				      </button>
-				      <a className="navbar-brand" href="#"><img className="img-responsive" src={require('./FooterComponents/css/images/logop.png')}></img></a>
+				      <a className="navbar-brand" href="#"><img className="img-responsive" src="/static/images/lofgon.png"></img></a>
 				    </div>
 				    <div className="collapse navbar-collapse" id="myNavbar">
 				      <ul className="nav navbar-nav navbar-right">

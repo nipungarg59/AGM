@@ -2,6 +2,8 @@
 
 node_modules
 
+venv
+
 #webpack-stats.json
 #webpack-stats-local.json
 

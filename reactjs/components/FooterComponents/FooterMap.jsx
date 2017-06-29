@@ -34,7 +34,7 @@ export default class FooterMap extends React.Component{
 		return(
 				<div ref="map" style={mapStyle}>
 					<div id="contact">
-					<Map containerStyle={mapStyle2} google={window.google} initialCenter={this.state.center} zoom={15}>
+					<Map containerStyle={mapStyle2} google={window.google} initialCenter={this.state.center} zoom={15} defaultOptions={{ scrollwheel:false}}>
 					<Marker
 					    name={'AG Mittal & Associates'}
 					    position={this.state.center}
@@ -55,16 +55,16 @@ export default class FooterMap extends React.Component{
 
 var mapStyle = {
       width: '100%',
-      maxWidth: 500,
+      maxWidth: 1200,
       height: 300,
       border: '1px solid black',
       position: 'relative',
-      
+      paddingBottom: '5px',
     }
 
 var mapStyle2 = {
-	width: 'auto',
-    maxWidth: 500,
+	width: '100%',
+    maxWidth: 1200,
 	height: 300,
 	position: 'relative',
 }

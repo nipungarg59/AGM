@@ -2,6 +2,7 @@ import React from "react"
 import FooterMap from "./FooterComponents/FooterMap"
 import FooterAddress from "./FooterComponents/FooterAddress"
 import FooterLove from "./FooterComponents/FooterLove"
+import ContactInfo from "./ComingSoonComponents/ContactInfo"
 import s from "./abcd.css"
 import fo from "./footer.css"
 
@@ -16,27 +17,23 @@ export default class Footer extends React.Component{
 	render(){
 		return(
 			<div>
-			<div className="bordered" id="contact">
-        <div>
-        <h1>Contact Us</h1>
-        <hr style={hrline}/>
-        <br/>
-        </div>
-        <Grid>
-            <row>
-              <Col xs={12} md={6}>
-                <FooterAddress ></FooterAddress>
-              </Col>
-              <Col xs={12} md={6}>
-                <FooterMap></FooterMap>
-              </Col>
-            </row>
-        </Grid>
-			</div>
-      <div className={fo.love}>
-        <FooterLove></FooterLove>
-      </div>
-			</div>
+                <div className="bordered" id="contact" style={{paddingBottom:'0px'}}>
+                    <div>
+                        <h1>Contact Us</h1>
+                        <hr style={hrline}/>
+                        <br/>
+                    </div>
+                    <div style={{paddingBottom:'3%', paddingRight: '5%', paddingLeft: '5%'}}>
+                        <FooterMap></FooterMap>
+                    </div>
+                    <div className="container" style={{paddingTop:'1%', paddingBottom:'3%', textAlign:'center'}}>
+                        <FooterAddress ></FooterAddress>
+                    </div>
+                    <div className={fo.love}>
+                        <FooterLove></FooterLove>
+                    </div>
+                </div>
+            </div>
 		)
 	}
 }

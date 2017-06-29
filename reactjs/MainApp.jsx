@@ -71,7 +71,7 @@ class MainApp extends React.Component{
 						</a>
 					</div>
 					<Headline>Heres the main page {this.state.windowWidth}</Headline>
-					<p className="big">Heres the fuckin main page</p>
+					<p className="big">Heres the main page</p>
 					<Footer></Footer>
 				</div>
 

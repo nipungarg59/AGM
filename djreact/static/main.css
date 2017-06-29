@@ -119,17 +119,26 @@
 }
 
 .zommin:hover i {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.sblock{border:1px solid transparent; -webkit-transition: all 0.5s ease;
-             -moz-transition: all 0.5s ease;
-               -o-transition: all 0.5s ease;
-                 }
-.sblock:hover { border:1px solid rgba(5, 195, 249, 0.5); background:rgba(5, 195, 249, 0.5); }
+.sblock{
+    border:1px solid transparent; 
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
 
+.sblock:hover { 
+    border:1px solid rgba(5, 195, 249, 0.5); 
+    background:rgba(5, 195, 249, 0.5); 
+}
+
+.orangeIcon {
+    color : orange;
+}
 .contact{
   text-align:center;
   padding:20px 20px 30px 20px;

@@ -51,18 +51,94 @@
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Navbar End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Home Start<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.home {
+	padding-top: 70px;
+	color: rgb(233, 173, 55);
+	text-align: center;
+	background-image: url('/static/images/caBackNew.jpg');
+	min-height: 100vh;
+	background-position: center;
+  	background-size: cover;
+  	font-family: Roboto,sans serif;
+}
+.quote {
+	font-family:Coustard;
+	font: sans-serif;
+}
+
+@media only screen and (max-width : 314px){
+	.name {
+		font-size: 50px;
+		padding-top: 30px;
+	}
+
+	.quote {
+		font-size: 50px;
+		padding-top: 30px;
+	}
+}
+
+@media only screen and (min-width : 315px) and (max-width : 518px){
+	.name {
+		font-size: 50px;
+		padding-top: 100px;
+	}
+
+	.quote {
+		font-size: 50px;
+		padding-top: 40px;
+	}
+}
+
+@media only screen and (max-width : 607px) and (min-width : 519px){
+	.name {
+		font-size: 60px;
+		padding-top: 100px;
+	}
+
+	.quote {
+		font-size: 60px;
+		padding-top: 40px;
+	}
+}
+
+@media only screen and (min-width : 607px) and (max-width : 1000px){
+	.name {
+		font-size: 65px;
+		padding-top: 100px;
+	}
+
+	.quote {
+		font-size: 60px;
+		padding-top: 60px;
+	}
+}
+
+@media only screen and (min-width : 1000px){
+	.name {
+		font-size: 68px;
+		padding-top: 130px;
+	}
+
+	.quote {
+		font-size: 60px;
+		padding-top: 60px;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Home End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Coming Soon<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*orig - /static/coming.jpg*/
 /*https://cdn.pixabay.com/photo/2017/01/26/21/32/background-2011768__340.jpg*/
 
 
 .bgimg2{
-  background-image: url('/static/3.jpg');
-  min-height: 100vh;
-
-  background-position: center;
-  background-size: cover;
-  animation: breath 30s linear infinite;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('/static/images/caBackNew.jpg');
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	animation: breath 30s linear infinite;
 }
 
 @keyframes breath {
@@ -165,3 +241,16 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   /*background-color: orange;*/
 }
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Contact Start<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.contact {
+	padding-top: 70px;
+}
+
+.cheading {
+	color: #f36;
+	font-family:Coustard;
+	font: sans-serif;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Contact End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

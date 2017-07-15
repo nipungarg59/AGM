@@ -6,20 +6,13 @@ import ContactInfo from "./ComingSoonComponents/ContactInfo"
 import s from "./abcd.css"
 import fo from "./footer.css"
 
-import {OverlayTrigger, Popover, Tooltip,Modal, Clearfix, ButtonToolbar, Button, ButtonGroup, DropdownButton, MenuItem, SplitButton} from "react-bootstrap"
-import {Pager , Pagination, Row, Col, Tabs, Tab, Breadcrumb, FormGroup,FormControl, Nav, NavItem, NavDropdown, Navbar} from "react-bootstrap"
-import {Well , Accordion, Panel, Table, ListGroup, ListGroupItem, Grid, Jumbotron, PageHeader} from "react-bootstrap"
-import {Form,Glyphicon,  InputGroup,  Checkbox, Radio, ControlLabel,HelpBlock } from "react-bootstrap"
-import {Media, Carousel, ResponsiveEmbed, Thumbnail,  Image} from "react-bootstrap"
-import {bootstrapUtils,addStyle,  Fade, Collapse, ProgressBar, Alert, Badge, Label} from "react-bootstrap"
-
 export default class Footer extends React.Component{
 	render(){
 		return(
 			<div>
-                <div className="bordered" id="contact" style={{paddingBottom:'0px'}}>
+                <div className="bordered contact" id="contact" style={{paddingBottom:'0px'}}>
                     <div>
-                        <h1>Contact Us</h1>
+                        <h1 className="cheading">Contact Us</h1>
                         <hr style={hrline}/>
                         <br/>
                     </div>
@@ -94,5 +87,5 @@ var add = {
 var hrline = {
   color: 'white',
   margin: 'auto',
-  width: '5%'
+  width: '10%'
 }

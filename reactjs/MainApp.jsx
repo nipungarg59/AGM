@@ -4,6 +4,7 @@ import Headline from "./components/Headline"
 import Footer from "./components/Footer"
 import ComingSoon from "./components/ComingSoon"
 import WindowSize from "./containers/WindowSize"
+import Quote from "./components/Quote"
 
 class MainApp extends React.Component{
 	constructor(props) {
@@ -18,7 +19,7 @@ class MainApp extends React.Component{
 
     updateComingSoon(){
     	this.setState({
-    		comingSoon : true,
+    		comingSoon : false,
     	})
     }
 
@@ -70,8 +71,8 @@ class MainApp extends React.Component{
 						<a  href="tel:01165254066" className="btn btn-danger btn-circle" style={{visibility:this.state.phoneIconVisible}}><i className="fa fa-phone fa-2x"></i>
 						</a>
 					</div>
-					<Headline>Heres the main page {this.state.windowWidth}</Headline>
-					<p className="big">Heres the main page</p>
+					<Headline></Headline>
+					<Quote></Quote>
 					<Footer></Footer>
 				</div>
 

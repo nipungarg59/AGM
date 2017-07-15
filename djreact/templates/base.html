@@ -39,7 +39,7 @@
 		  text-align: center;
 		  padding-bottom: 20px;
 		}
-		.bordered:before {
+		/*.bordered:before {
 		  content: '';
 		  position: absolute;
 		  z-index: -1;
@@ -53,7 +53,7 @@
 		  top: -1em;
 		  height: 1em;
 		  width: 100%;
-		}
+		}*/
 		.os{
 			font-family: 'Open Sans',sans-serif;
 		}
@@ -135,7 +135,7 @@
 		
     </style>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa-7td-2OYrc4Mcg2tQh75K9QEAkF0n7Q"></script>
     {% block main %}{% endblock %}
   </body>

@@ -10,7 +10,7 @@ export default class Headline extends React.Component {
 	render() {
     return (
     	<div id="top">
-	      	<div className="container example-7">
+	      	<div className="container example-7" >
 		        <nav className="navbar navbar-inverse navbar-default navbar-fixed-top">
 				  <div className="container-fluid">
 				    <div className="navbar-header">
@@ -40,13 +40,6 @@ export default class Headline extends React.Component {
 				  </div>
 				</nav>
 			</div>
-			<div>
-						<h1 style={style2}>{ this.props.children }</h1>
-				    	<button type="button" className="btn btn-primary">Primary</button>
-				    	<div>
-				    		<p>dfj</p>
-				    	</div>
-				    	</div>
 	    </div>
     )
   }

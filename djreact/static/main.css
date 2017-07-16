@@ -128,6 +128,45 @@
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Home End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>About us Start<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.about {
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+
+.about h1 {
+	text-align: center;
+	font-family: Coustard,sans-serif;
+    color: #2e2e2e;
+    font-weight: 100;
+}
+
+.about p {
+	width: 65%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #959595;
+    font-weight: 400;
+    letter-spacing: .43px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: Roboto,sans-serif;
+    line-height: 26px;
+}
+
+.about hr{
+	width : 30%;
+}
+
+@media only screen and (max-width : 720px){
+	.about p {
+		font-size: 14px;
+	    width: 90%;
+	}
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>About us End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Coming Soon<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*orig - /static/coming.jpg*/
 /*https://cdn.pixabay.com/photo/2017/01/26/21/32/background-2011768__340.jpg*/

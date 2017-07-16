@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import ComingSoon from "./components/ComingSoon"
 import WindowSize from "./containers/WindowSize"
 import Quote from "./components/Quote"
+import About from "./components/About"
 
 class MainApp extends React.Component{
 	constructor(props) {
@@ -73,6 +74,7 @@ class MainApp extends React.Component{
 					</div>
 					<Headline></Headline>
 					<Quote></Quote>
+					<About></About>
 					<Footer></Footer>
 				</div>
 

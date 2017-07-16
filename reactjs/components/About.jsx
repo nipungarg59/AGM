@@ -1,4 +1,5 @@
 import React from "react"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class About extends React.Component {
 
@@ -7,7 +8,7 @@ export default class About extends React.Component {
 			<div id="about" className="about fluid">
 				<div className="container">
 					
-					<h1>About Us</h1>
+					<h1 className="animated fadeInUp"><ScrollAnimation animateIn="fadeInUp">About Us</ScrollAnimation></h1>
 					<hr/>
 					<p>We are a NCR based professionally managed and innovative corporate service provider firm, with a multi-disciplinary focus providing top quality professional Consultancy Services.</p>
 					<p>We believe that we are in a position to offer our skills to varied type of clients ranging from corporate sector undertaking, banks, and charitable institutions, small and medium level firms and individuals and have a creative and positive approach towards solutions to problems as they arise.</p>

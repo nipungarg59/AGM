@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./css/listIcons.css"
+// import styles from "./css/listIcons.css"
 
 export default class FooterAddress extends React.Component{
 	render(){

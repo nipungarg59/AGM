@@ -297,15 +297,36 @@
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>Footer Prom End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Footer Start End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>Contact Start<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.contact {
-	padding-top: 70px;
+.footer {
+	background-color: #222222;
+	color: #9d9d9d;
+	text-align: center;
+	padding-top: 85px;
 }
 
-.cheading {
+.footer h1 {
 	color: #f36;
 	font-family:Coustard;
 	font: sans-serif;
 }
-/*>>>>>>>>>>>>>>>>>>>>>>>>>Contact End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.footer hr {
+	width :30%;
+	padding-bottom: 30px;
+	color: #959595;
+}
+
+.map {
+	padding-bottom: 3%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+.foo-contact {
+	padding-top: 1%;
+	padding-bottom: 3%;
+	text-align: center;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>Footer End<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

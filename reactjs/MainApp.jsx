@@ -11,7 +11,7 @@ class MainApp extends React.Component{
 	constructor(props) {
     	super(props);
       	this.state = {
-        	comingSoon : true,
+        	comingSoon : false,
         	phoneIconVisible : 'hidden',
         	windowHeight: '',
         	windowWidth: '',

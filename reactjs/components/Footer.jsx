@@ -8,16 +8,16 @@ export default class Footer extends React.Component{
 	render(){
 		return(
 			<div>
-                <div className="bordered contact" id="contact" style={{paddingBottom:'0px'}}>
-                    <div>
-                        <h1 className="cheading"><ScrollAnimation animateIn="fadeInUp">Contact Us</ScrollAnimation></h1>
-                        <hr style={hrline}/>
+                <div className="footer fluid" id="contact">
+                    <div className="container">
+                        <h1><ScrollAnimation animateIn="fadeInUp">Contact Us</ScrollAnimation></h1>
+                        <hr/>
                         <br/>
                     </div>
-                    <div style={{paddingBottom:'3%', paddingRight: '5%', paddingLeft: '5%'}}>
+                    <div className="map">
                         <FooterMap></FooterMap>
                     </div>
-                    <div className="container" style={{paddingTop:'1%', paddingBottom:'3%', textAlign:'center'}}>
+                    <div className="container foo-contact">
                         <FooterAddress ></FooterAddress>
                     </div>
                 </div>
@@ -29,38 +29,4 @@ export default class Footer extends React.Component{
 	}
 }
 
-var style = {
-    backgroundColor: "#222222",
-    borderTop: "1px solid #E7E7E7",
-    textAlign: "center",
-    padding: "60px",
-    position: "fixed",
-    left: "0",
-    bottom: "0",
-    height: "60px",
-    width: "100%",
-};
 
-var phantom = {
-  display: 'block',
-  padding: '20px',
-  height: '60px',
-  width: '100%',
-}
-
-var map = {
-  float: 'left',
-  width: '50%'
-}
-
-var add = {
-  float: 'left',
-  width: '50%'
-
-}
-
-var hrline = {
-  color: 'white',
-  margin: 'auto',
-  width: '10%'
-}
